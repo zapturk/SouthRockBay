@@ -10,6 +10,6 @@ if(instance_exists(oPlayer)){
 	var curX = camera_get_view_x(view);
 	var curY = camera_get_view_y(view);
 	
-	var camSpd = .1;
+	var camSpd = 1;
 	camera_set_view_pos(view, lerp(curX, xPos, camSpd), lerp(curY, yPos, camSpd));
 }
