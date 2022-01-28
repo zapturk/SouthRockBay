@@ -5,3 +5,4 @@
 randomize();
 
 walkspd = 1;
+image_speed = 0;

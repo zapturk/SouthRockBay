@@ -11,6 +11,7 @@
     {"id":{"name":"StopMovement","path":"scripts/StopMovement/StopMovement.yy",},"order":0,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":0,},
     {"id":{"name":"sWaterEdge","path":"sprites/sWaterEdge/sWaterEdge.yy",},"order":2,},
+    {"id":{"name":"_init","path":"scripts/_init/_init.yy",},"order":1,},
     {"id":{"name":"oWater","path":"objects/oWater/oWater.yy",},"order":3,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
