@@ -10,7 +10,7 @@
   "bbox_left": 14,
   "bbox_right": 1807,
   "bbox_top": 0,
-  "bbox_bottom": 1183,
+  "bbox_bottom": 1198,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b0f174f3-cca7-4204-8e61-1da113ff7d45","path":"sprites/sOutdoor/sOutdoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b0f174f3-cca7-4204-8e61-1da113ff7d45","path":"sprites/sOutdoor/sOutdoor.yy",},"LayerId":{"name":"0d2e5c29-7a50-4e05-8976-fe0af4e40aee","path":"sprites/sOutdoor/sOutdoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sOutdoor","path":"sprites/sOutdoor/sOutdoor.yy",},"resourceVersion":"1.0","name":"b0f174f3-cca7-4204-8e61-1da113ff7d45","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"73bff690-eba0-4772-8583-b3a6af45238a","path":"sprites/sOutdoor2/sOutdoor2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"73bff690-eba0-4772-8583-b3a6af45238a","path":"sprites/sOutdoor2/sOutdoor2.yy",},"LayerId":{"name":"e7ed55e9-2d5e-4d9b-b91c-28e96d0ee056","path":"sprites/sOutdoor2/sOutdoor2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sOutdoor2","path":"sprites/sOutdoor2/sOutdoor2.yy",},"resourceVersion":"1.0","name":"73bff690-eba0-4772-8583-b3a6af45238a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sOutdoor","path":"sprites/sOutdoor/sOutdoor.yy",},
+    "spriteId": {"name":"sOutdoor2","path":"sprites/sOutdoor2/sOutdoor2.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ea3427b0-b68f-4016-88b2-8643b34e286a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b0f174f3-cca7-4204-8e61-1da113ff7d45","path":"sprites/sOutdoor/sOutdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fc7b656b-a82a-49fc-9b2c-c9c95283f53f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"73bff690-eba0-4772-8583-b3a6af45238a","path":"sprites/sOutdoor2/sOutdoor2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sOutdoor","path":"sprites/sOutdoor/sOutdoor.yy",},
+    "parent": {"name":"sOutdoor2","path":"sprites/sOutdoor2/sOutdoor2.yy",},
     "resourceVersion": "1.3",
-    "name": "sOutdoor",
+    "name": "sOutdoor2",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0d2e5c29-7a50-4e05-8976-fe0af4e40aee","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e7ed55e9-2d5e-4d9b-b91c-28e96d0ee056","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/TileSet.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sOutdoor",
+  "name": "sOutdoor2",
   "tags": [],
   "resourceType": "GMSprite",
 }
