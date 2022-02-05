@@ -3,4 +3,3 @@
 
 state = playerStates.walking;
 dir = directions.left;
-sprite_index = sprite[dir];
