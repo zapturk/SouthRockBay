@@ -18,21 +18,21 @@ function SetShaderUniform(color){
 	color5 = global.HairColorValue[color][4];
 	color6 = global.HairColorValue[color][5];
 
-	shHandleRange = shader_get_uniform(shReplaceColor, "range");
+	shHandleRange = shader_get_uniform(shHairReplaceColor, "range");
 
-	shHandleGray1 = shader_get_uniform(shReplaceColor, "gray1");
-	shHandleGray2 = shader_get_uniform(shReplaceColor, "gray2");
-	shHandleGray3 = shader_get_uniform(shReplaceColor, "gray3");
-	shHandleGray4 = shader_get_uniform(shReplaceColor, "gray4");
-	shHandleGray5 = shader_get_uniform(shReplaceColor, "gray5");
-	shHandleGray6 = shader_get_uniform(shReplaceColor, "gray6");
+	shHandleGray1 = shader_get_uniform(shHairReplaceColor, "gray1");
+	shHandleGray2 = shader_get_uniform(shHairReplaceColor, "gray2");
+	shHandleGray3 = shader_get_uniform(shHairReplaceColor, "gray3");
+	shHandleGray4 = shader_get_uniform(shHairReplaceColor, "gray4");
+	shHandleGray5 = shader_get_uniform(shHairReplaceColor, "gray5");
+	shHandleGray6 = shader_get_uniform(shHairReplaceColor, "gray6");
 
-	shHandleColor1 = shader_get_uniform(shReplaceColor, "color1");
-	shHandleColor2 = shader_get_uniform(shReplaceColor, "color2");
-	shHandleColor3 = shader_get_uniform(shReplaceColor, "color3");
-	shHandleColor4 = shader_get_uniform(shReplaceColor, "color4");
-	shHandleColor5 = shader_get_uniform(shReplaceColor, "color5");
-	shHandleColor6 = shader_get_uniform(shReplaceColor, "color6");
+	shHandleColor1 = shader_get_uniform(shHairReplaceColor, "color1");
+	shHandleColor2 = shader_get_uniform(shHairReplaceColor, "color2");
+	shHandleColor3 = shader_get_uniform(shHairReplaceColor, "color3");
+	shHandleColor4 = shader_get_uniform(shHairReplaceColor, "color4");
+	shHandleColor5 = shader_get_uniform(shHairReplaceColor, "color5");
+	shHandleColor6 = shader_get_uniform(shHairReplaceColor, "color6");
 	
 	shader_set_uniform_f(shHandleRange, 1);
 

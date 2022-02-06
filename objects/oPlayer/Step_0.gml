@@ -6,9 +6,9 @@ if(state == playerStates.walking){
 	hspd = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * walkspd;
 	vspd = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) * walkspd;
 
-	StopMovement(oWater);
 	StopMovement(oSolid);
 	StopMovement(oRock);
+	StopMovementLayer("Water");
 
 	x += hspd;
 	y += vspd;

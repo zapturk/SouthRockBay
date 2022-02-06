@@ -61,7 +61,8 @@ function _init(){
 		turquoise
 	}
 
-	initCharSprite();
-	initHairSprite();
+	initCharSprites();
+	initHairSprites();
+	initToolSptites();
 
 }

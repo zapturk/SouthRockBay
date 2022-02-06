@@ -13,6 +13,7 @@ dir = directions.down;
 
 image_speed = 0;
 
+
 // Spawn the eyes
 //instance_create_depth(x, y, -1, oHair);
 
