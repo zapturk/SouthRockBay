@@ -27,7 +27,7 @@ image_speed = 0;
 //instance_create_depth(x, y, -4, oHair);
 
 // Spawns hair
-instance_create_depth(x, y, -5, oHair);
+//instance_create_depth(x, y, -5, oHair);
 
 // Spawn tools
 instance_create_depth(x, y, -6, oTool);

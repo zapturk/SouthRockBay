@@ -37,10 +37,21 @@ function StopMovementLayer(layerName){
 		}
 	}
 
-	if(tilemap_get_at_pixel(tileID, oPlayer.bbox_left, oPlayer.bbox_top + oPlayer.vspd)){
-		while(!tilemap_get_at_pixel(tileID, oPlayer.bbox_left, oPlayer.bbox_top + oPlayer.vspd)){
-			oPlayer.y += sign(oPlayer.vspd);
+	if(oPlayer.vspd < 0){
+		if(tilemap_get_at_pixel(tileID, oPlayer.bbox_left, oPlayer.bbox_top + oPlayer.vspd)){
+			while(!tilemap_get_at_pixel(tileID, oPlayer.bbox_left, oPlayer.bbox_top + oPlayer.vspd)){
+				oPlayer.y += sign(oPlayer.vspd);
+			}
+			oPlayer.vspd = 0;
 		}
-		oPlayer.vspd = 0;
+	}
+	
+	if(oPlayer.vspd > 0){
+		if(tilemap_get_at_pixel(tileID, oPlayer.bbox_right, oPlayer.bbox_bottom + oPlayer.vspd)){
+			while(!tilemap_get_at_pixel(tileID, oPlayer.bbox_right, oPlayer.bbox_bottom + oPlayer.vspd)){
+				oPlayer.y += sign(oPlayer.vspd);
+			}
+			oPlayer.vspd = 0;
+		}
 	}
 }

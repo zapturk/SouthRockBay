@@ -10,26 +10,32 @@ function initCharSprites(){
 	global.SkinColorValue[skinColors.char1][5] = new ColorVector(49, 38, 39);
 	
 	// set all walking 
-	global.WalkingSprtie[directions.up] = sWalkUp;
-	global.WalkingSprtie[directions.right] = sWalkRight; 
-	global.WalkingSprtie[directions.down] = sWalkDown;
-	global.WalkingSprtie[directions.left] = sWalkLeft; 
+	global.PlayerSprtie[playerStates.walking][directions.up] = sWalkUp;
+	global.PlayerSprtie[playerStates.walking][directions.right] = sWalkRight; 
+	global.PlayerSprtie[playerStates.walking][directions.down] = sWalkDown;
+	global.PlayerSprtie[playerStates.walking][directions.left] = sWalkLeft; 
+	
+	// set all idle
+	global.PlayerSprtie[playerStates.idle][directions.up] = sWalkUp;
+	global.PlayerSprtie[playerStates.idle][directions.right] = sWalkRight; 
+	global.PlayerSprtie[playerStates.idle][directions.down] = sWalkDown;
+	global.PlayerSprtie[playerStates.idle][directions.left] = sWalkLeft; 
 	
 	// set all Axe 
-	global.AxeSprtie[directions.up] = sAxeUp;
-	global.AxeSprtie[directions.right] = sAxeRight; 
-	global.AxeSprtie[directions.down] = sAxeDown;
-	global.AxeSprtie[directions.left] = sAxeLeft; 
+	global.PlayerSprtie[playerStates.chopping][directions.up] = sAxeUp;
+	global.PlayerSprtie[playerStates.chopping][directions.right] = sAxeRight; 
+	global.PlayerSprtie[playerStates.chopping][directions.down] = sAxeDown;
+	global.PlayerSprtie[playerStates.chopping][directions.left] = sAxeLeft; 
 
-	//// set all Axe 
-	//global.WalkingSprtie[directions.up] = sAxeUp;
-	//global.WalkingSprtie[directions.right] = sAxeRight; 
-	//global.WalkingSprtie[directions.down] = sAxeDown;
-	//global.WalkingSprtie[directions.left] = sAxeLeft; 
+	// set all Axe 
+	global.PlayerSprtie[playerStates.tilling][directions.up] = sHoeUp;
+	global.PlayerSprtie[playerStates.tilling][directions.right] = sHoeRight; 
+	global.PlayerSprtie[playerStates.tilling][directions.down] = sHoeDown;
+	global.PlayerSprtie[playerStates.tilling][directions.left] = sHoeLeft; 
 
 	// set up fishing
-	global.FishSprtie[directions.up] = sFishUp;
-	global.FishSprtie[directions.right] = sFishRight; 
-	global.FishSprtie[directions.down] = sFishDown;
-	global.FishSprtie[directions.left] = sFishLeft; 
+	global.PlayerSprtie[playerStates.fishing][directions.up] = sFishUp;
+	global.PlayerSprtie[playerStates.fishing][directions.right] = sFishRight; 
+	global.PlayerSprtie[playerStates.fishing][directions.down] = sFishDown;
+	global.PlayerSprtie[playerStates.fishing][directions.left] = sFishLeft; 
 }

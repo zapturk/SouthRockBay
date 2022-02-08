@@ -10,7 +10,8 @@ function _init(){
 		startFishing,
 		fishing,
 		mining,
-		chopping
+		chopping,
+		tilling
 	}
 	
 	enum directions{
@@ -64,5 +65,4 @@ function _init(){
 	initCharSprites();
 	initHairSprites();
 	initToolSptites();
-
 }
