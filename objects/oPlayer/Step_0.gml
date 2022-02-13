@@ -9,6 +9,7 @@ if(state == playerStates.walking){
 
 	StopMovement(oSolid);
 	StopMovement(oRock);
+	StopMovement(oWood);
 	StopMovementLayer("Water");
 
 	x += hspd;
@@ -26,6 +27,7 @@ if(state == playerStates.chopping){
 	image_speed = 1;
 	if(image_index == 5){
 		state = playerStates.idle;
+		DestroyObj(oWood);
 	}
 }
 
