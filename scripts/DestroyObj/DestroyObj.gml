@@ -19,6 +19,7 @@ function DestroyObj(object){
 			if(inst != noone){
 				instance_destroy(inst.id);
 			};
+			break;
 		case directions.left:
 			inst = instance_position(oPlayer.x - 12, oPlayer.y + 4, object);
 			if(inst != noone){

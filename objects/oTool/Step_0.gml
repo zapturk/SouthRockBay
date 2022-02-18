@@ -1,10 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+x = oPlayer.x;
+y = oPlayer.y;
+
 if(oPlayer.state == playerStates.fishing){
 	sprite_index = global.ToolSprite[oPlayer.state][oPlayer.dir];
-	x = oPlayer.x;
-	y = oPlayer.y;
 	
 	visible = true;
 	image_speed = 1;
@@ -14,16 +15,12 @@ if(oPlayer.state == playerStates.fishing){
 }
 else if(oPlayer.state == playerStates.chopping){
 	sprite_index = global.ToolSprite[oPlayer.state][oPlayer.dir];
-	x = oPlayer.x;
-	y = oPlayer.y;
 	
 	visible = true;
 	image_speed = 1;
 }
 else if(oPlayer.state == playerStates.tilling){
 	sprite_index = global.ToolSprite[oPlayer.state][oPlayer.dir];
-	x = oPlayer.x;
-	y = oPlayer.y;
 	
 	visible = true;
 	image_speed = 1;

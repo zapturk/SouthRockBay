@@ -1,5 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
+if(carryingItem){
+	state = playerStates.walkingCarry;
+}
+else{
+	state = playerStates.walking;
+}
 
-state = playerStates.walking;
 dir = directions.down;

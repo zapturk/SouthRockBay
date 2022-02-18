@@ -10,7 +10,6 @@ if(oPlayer.state == playerStates.walking){
 	if(oPlayer.hspd != 0 || oPlayer.vspd != 0){
 		image_speed = 1;	
 	}
-
 }
 
 if(oPlayer.state == playerStates.idle){

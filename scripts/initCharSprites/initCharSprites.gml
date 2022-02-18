@@ -9,17 +9,29 @@ function initCharSprites(){
 	global.SkinColorValue[skinColors.char1][4] = new ColorVector(54, 41, 42);
 	global.SkinColorValue[skinColors.char1][5] = new ColorVector(49, 38, 39);
 	
+	// set all idle 
+	global.PlayerSprtie[playerStates.idle][directions.up] = sWalkUp;
+	global.PlayerSprtie[playerStates.idle][directions.right] = sWalkRight; 
+	global.PlayerSprtie[playerStates.idle][directions.down] = sWalkDown;
+	global.PlayerSprtie[playerStates.idle][directions.left] = sWalkLeft;
+	
 	// set all walking 
 	global.PlayerSprtie[playerStates.walking][directions.up] = sWalkUp;
 	global.PlayerSprtie[playerStates.walking][directions.right] = sWalkRight; 
 	global.PlayerSprtie[playerStates.walking][directions.down] = sWalkDown;
 	global.PlayerSprtie[playerStates.walking][directions.left] = sWalkLeft; 
 	
-	// set all idle
-	global.PlayerSprtie[playerStates.idle][directions.up] = sWalkUp;
-	global.PlayerSprtie[playerStates.idle][directions.right] = sWalkRight; 
-	global.PlayerSprtie[playerStates.idle][directions.down] = sWalkDown;
-	global.PlayerSprtie[playerStates.idle][directions.left] = sWalkLeft; 
+ 	// set all Carry idle 
+	global.PlayerSprtie[playerStates.idleCarry][directions.up] = sCarryUp;
+	global.PlayerSprtie[playerStates.idleCarry][directions.right] = sCarryRight; 
+	global.PlayerSprtie[playerStates.idleCarry][directions.down] = sCarryDown;
+	global.PlayerSprtie[playerStates.idleCarry][directions.left] = sCarryLeft;
+	
+	// set all Carry walking 
+	global.PlayerSprtie[playerStates.walkingCarry][directions.up] = sCarryUp;
+	global.PlayerSprtie[playerStates.walkingCarry][directions.right] = sCarryRight; 
+	global.PlayerSprtie[playerStates.walkingCarry][directions.down] = sCarryDown;
+	global.PlayerSprtie[playerStates.walkingCarry][directions.left] = sCarryLeft; 
 	
 	// set all Axe 
 	global.PlayerSprtie[playerStates.chopping][directions.up] = sAxeUp;
@@ -27,7 +39,7 @@ function initCharSprites(){
 	global.PlayerSprtie[playerStates.chopping][directions.down] = sAxeDown;
 	global.PlayerSprtie[playerStates.chopping][directions.left] = sAxeLeft; 
 
-	// set all Axe 
+	// set all Hoe 
 	global.PlayerSprtie[playerStates.tilling][directions.up] = sHoeUp;
 	global.PlayerSprtie[playerStates.tilling][directions.right] = sHoeRight; 
 	global.PlayerSprtie[playerStates.tilling][directions.down] = sHoeDown;

@@ -3,7 +3,7 @@
 
 sprite_index = global.PlayerSprtie[state][dir];
 
-if(state == playerStates.walking){
+if(state == playerStates.walking || state == playerStates.walkingCarry){
 	hspd = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * walkspd;
 	vspd = (keyboard_check(ord("S")) - keyboard_check(ord("W"))) * walkspd;
 
@@ -19,7 +19,12 @@ if(state == playerStates.walking){
 		image_speed = 1;	
 	}
 	else{
-		state = playerStates.idle;
+		if(carryingItem){
+			state = playerStates.idleCarry;
+		}
+		else{
+			state = playerStates.idle;
+		}
 	}
 }
 
@@ -41,11 +46,11 @@ if(state == playerStates.tilling){
 if(state == playerStates.fishing){
 	image_speed = 1;
 	if(image_index == 5){
-		image_speed = 0;	
+		image_speed = 0;
 	}
 }
 
-if(state == playerStates.idle){
+if(state == playerStates.idle || state == playerStates.idleCarry){
 	image_index = 0;
 	image_speed = 0;	
 }

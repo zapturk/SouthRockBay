@@ -6,12 +6,20 @@ function _init(){
 	// Enums
 	enum playerStates {
 		idle,
+		idleCarry,
 		walking,
-		startFishing,
+		walkingCarry,
 		fishing,
 		mining,
 		chopping,
 		tilling
+		
+	}
+	
+	enum fishingState{
+		notFishing,
+		fishHooked,
+		fishMissed
 	}
 	
 	enum directions{
