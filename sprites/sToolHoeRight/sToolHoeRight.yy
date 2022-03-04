@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sToolHoeRight","path":"sprites/sToolHoeRight/sToolHoeRight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sToolHoeRight",
     "tags": [],
     "resourceType": "GMSequence",

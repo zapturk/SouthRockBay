@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sPickAxeLeft","path":"sprites/sPickAxeLeft/sPickAxeLeft.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sPickAxeLeft",
     "tags": [],
     "resourceType": "GMSequence",

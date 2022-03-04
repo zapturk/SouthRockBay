@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sAxeUp","path":"sprites/sAxeUp/sAxeUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sAxeUp",
     "tags": [],
     "resourceType": "GMSequence",

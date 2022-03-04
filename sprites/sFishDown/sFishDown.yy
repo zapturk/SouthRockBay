@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sFishDown","path":"sprites/sFishDown/sFishDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sFishDown",
     "tags": [],
     "resourceType": "GMSequence",

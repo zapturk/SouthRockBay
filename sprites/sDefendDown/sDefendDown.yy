@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sDefendDown","path":"sprites/sDefendDown/sDefendDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sDefendDown",
     "tags": [],
     "resourceType": "GMSequence",

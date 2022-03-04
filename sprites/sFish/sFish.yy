@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sFish","path":"sprites/sFish/sFish.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sFish",
     "tags": [],
     "resourceType": "GMSequence",

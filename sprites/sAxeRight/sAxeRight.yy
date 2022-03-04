@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sAxeRight","path":"sprites/sAxeRight/sAxeRight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sAxeRight",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sJumpDown","path":"sprites/sJumpDown/sJumpDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sJumpDown",
     "tags": [],
     "resourceType": "GMSequence",

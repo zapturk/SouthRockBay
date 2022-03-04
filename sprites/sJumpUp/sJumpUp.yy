@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sJumpUp","path":"sprites/sJumpUp/sJumpUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sJumpUp",
     "tags": [],
     "resourceType": "GMSequence",

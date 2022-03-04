@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWalkRight","path":"sprites/sWalkRight/sWalkRight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWalkRight",
     "tags": [],
     "resourceType": "GMSequence",

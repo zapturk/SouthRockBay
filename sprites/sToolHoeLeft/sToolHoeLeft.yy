@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sToolHoeLeft","path":"sprites/sToolHoeLeft/sToolHoeLeft.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sToolHoeLeft",
     "tags": [],
     "resourceType": "GMSequence",

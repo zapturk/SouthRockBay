@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sFishShadow","path":"sprites/sFishShadow/sFishShadow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sFishShadow",
     "tags": [],
     "resourceType": "GMSequence",

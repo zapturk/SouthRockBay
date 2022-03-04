@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sJumpRight","path":"sprites/sJumpRight/sJumpRight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sJumpRight",
     "tags": [],
     "resourceType": "GMSequence",

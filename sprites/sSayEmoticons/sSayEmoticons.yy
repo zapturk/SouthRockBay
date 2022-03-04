@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sSayEmoticons","path":"sprites/sSayEmoticons/sSayEmoticons.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sSayEmoticons",
     "tags": [],
     "resourceType": "GMSequence",

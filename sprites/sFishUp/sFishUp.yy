@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sFishUp","path":"sprites/sFishUp/sFishUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sFishUp",
     "tags": [],
     "resourceType": "GMSequence",

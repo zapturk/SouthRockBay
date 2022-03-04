@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sJumpLeft","path":"sprites/sJumpLeft/sJumpLeft.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sJumpLeft",
     "tags": [],
     "resourceType": "GMSequence",

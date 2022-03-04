@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWalkLeftEmo","path":"sprites/sWalkLeftEmo/sWalkLeftEmo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWalkLeftEmo",
     "tags": [],
     "resourceType": "GMSequence",

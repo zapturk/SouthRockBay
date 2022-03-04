@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sSwordUp","path":"sprites/sSwordUp/sSwordUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sSwordUp",
     "tags": [],
     "resourceType": "GMSequence",

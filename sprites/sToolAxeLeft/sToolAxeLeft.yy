@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sToolAxeLeft","path":"sprites/sToolAxeLeft/sToolAxeLeft.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sToolAxeLeft",
     "tags": [],
     "resourceType": "GMSequence",

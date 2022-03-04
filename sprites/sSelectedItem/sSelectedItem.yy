@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sSelectedItem","path":"sprites/sSelectedItem/sSelectedItem.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sSelectedItem",
     "tags": [],
     "resourceType": "GMSequence",

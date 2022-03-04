@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sBobber1","path":"sprites/sBobber1/sBobber1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sBobber1",
     "tags": [],
     "resourceType": "GMSequence",

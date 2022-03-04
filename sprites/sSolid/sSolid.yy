@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sSolid","path":"sprites/sSolid/sSolid.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sSolid",
     "tags": [],
     "resourceType": "GMSequence",

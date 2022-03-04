@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWalkDown","path":"sprites/sWalkDown/sWalkDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWalkDown",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWaterEdge","path":"sprites/sWaterEdge/sWaterEdge.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWaterEdge",
     "tags": [],
     "resourceType": "GMSequence",

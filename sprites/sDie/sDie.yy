@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sDie","path":"sprites/sDie/sDie.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sDie",
     "tags": [],
     "resourceType": "GMSequence",

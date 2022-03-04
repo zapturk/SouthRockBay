@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sDefendRight","path":"sprites/sDefendRight/sDefendRight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sDefendRight",
     "tags": [],
     "resourceType": "GMSequence",

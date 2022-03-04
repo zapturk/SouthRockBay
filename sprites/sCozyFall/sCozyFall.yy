@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sCozyFall","path":"sprites/sCozyFall/sCozyFall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sCozyFall",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sSwordLeft","path":"sprites/sSwordLeft/sSwordLeft.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sSwordLeft",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sHoeUp","path":"sprites/sHoeUp/sHoeUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sHoeUp",
     "tags": [],
     "resourceType": "GMSequence",

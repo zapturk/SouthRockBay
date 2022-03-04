@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWalkDownEmo","path":"sprites/sWalkDownEmo/sWalkDownEmo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWalkDownEmo",
     "tags": [],
     "resourceType": "GMSequence",

@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWalkUpEmo","path":"sprites/sWalkUpEmo/sWalkUpEmo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWalkUpEmo",
     "tags": [],
     "resourceType": "GMSequence",

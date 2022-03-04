@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWaterLeft","path":"sprites/sWaterLeft/sWaterLeft.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWaterLeft",
     "tags": [],
     "resourceType": "GMSequence",

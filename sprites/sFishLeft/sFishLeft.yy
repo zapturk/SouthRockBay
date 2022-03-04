@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sFishLeft","path":"sprites/sFishLeft/sFishLeft.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sFishLeft",
     "tags": [],
     "resourceType": "GMSequence",

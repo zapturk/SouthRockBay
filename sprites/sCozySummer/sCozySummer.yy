@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sCozySummer","path":"sprites/sCozySummer/sCozySummer.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sCozySummer",
     "tags": [],
     "resourceType": "GMSequence",

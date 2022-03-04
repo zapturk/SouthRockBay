@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sHitUp","path":"sprites/sHitUp/sHitUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sHitUp",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWaterUp","path":"sprites/sWaterUp/sWaterUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWaterUp",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sHitDown","path":"sprites/sHitDown/sHitDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sHitDown",
     "tags": [],
     "resourceType": "GMSequence",

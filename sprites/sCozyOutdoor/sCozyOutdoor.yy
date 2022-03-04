@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sCozyOutdoor","path":"sprites/sCozyOutdoor/sCozyOutdoor.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sCozyOutdoor",
     "tags": [],
     "resourceType": "GMSequence",

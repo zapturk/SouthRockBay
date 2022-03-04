@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sToolAxeUp","path":"sprites/sToolAxeUp/sToolAxeUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sToolAxeUp",
     "tags": [],
     "resourceType": "GMSequence",

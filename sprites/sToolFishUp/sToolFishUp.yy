@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sToolFishUp","path":"sprites/sToolFishUp/sToolFishUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sToolFishUp",
     "tags": [],
     "resourceType": "GMSequence",

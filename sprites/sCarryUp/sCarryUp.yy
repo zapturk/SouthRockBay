@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sCarryUp","path":"sprites/sCarryUp/sCarryUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sCarryUp",
     "tags": [],
     "resourceType": "GMSequence",

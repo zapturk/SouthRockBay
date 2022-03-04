@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sOcean","path":"sprites/sOcean/sOcean.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sOcean",
     "tags": [],
     "resourceType": "GMSequence",

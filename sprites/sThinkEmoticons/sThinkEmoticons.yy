@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sThinkEmoticons","path":"sprites/sThinkEmoticons/sThinkEmoticons.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sThinkEmoticons",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sDefendLeft","path":"sprites/sDefendLeft/sDefendLeft.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sDefendLeft",
     "tags": [],
     "resourceType": "GMSequence",

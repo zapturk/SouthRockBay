@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sHitRight","path":"sprites/sHitRight/sHitRight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sHitRight",
     "tags": [],
     "resourceType": "GMSequence",

@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sCarryRight","path":"sprites/sCarryRight/sCarryRight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sCarryRight",
     "tags": [],
     "resourceType": "GMSequence",

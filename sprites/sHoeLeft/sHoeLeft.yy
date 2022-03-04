@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sHoeLeft","path":"sprites/sHoeLeft/sHoeLeft.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sHoeLeft",
     "tags": [],
     "resourceType": "GMSequence",

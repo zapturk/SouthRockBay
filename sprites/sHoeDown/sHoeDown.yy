@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sHoeDown","path":"sprites/sHoeDown/sHoeDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sHoeDown",
     "tags": [],
     "resourceType": "GMSequence",

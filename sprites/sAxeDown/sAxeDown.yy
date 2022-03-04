@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sAxeDown","path":"sprites/sAxeDown/sAxeDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sAxeDown",
     "tags": [],
     "resourceType": "GMSequence",

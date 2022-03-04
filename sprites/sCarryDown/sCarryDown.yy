@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sCarryDown","path":"sprites/sCarryDown/sCarryDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sCarryDown",
     "tags": [],
     "resourceType": "GMSequence",

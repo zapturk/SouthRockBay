@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sDefendUp","path":"sprites/sDefendUp/sDefendUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sDefendUp",
     "tags": [],
     "resourceType": "GMSequence",
