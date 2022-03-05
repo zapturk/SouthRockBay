@@ -403,6 +403,8 @@ graph_offset = Vector2( 245, 125 )
 [sub_resource type="AnimationNodeStateMachinePlayback" id=24]
 
 [node name="Player" type="KinematicBody2D"]
+collision_layer = 3
+collision_mask = 3
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
@@ -488,6 +490,7 @@ parameters/Idle/blend_position = Vector2( 0, 0 )
 parameters/Run/blend_position = Vector2( 0, 0 )
 
 [node name="UI" type="Node2D" parent="."]
+visible = false
 z_index = 1
 
 [node name="ItemBar" parent="UI" instance=ExtResource( 8 )]

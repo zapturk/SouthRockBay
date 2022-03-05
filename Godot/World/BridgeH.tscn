@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://World/Bridge.gd" type="Script" id=1]
+[ext_resource path="res://World/WorldTiles.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 26, 4.5 )
+
+[node name="Bridge" type="StaticBody2D" groups=["Bridges"]]
+script = ExtResource( 1 )
+
+[node name="WorldTiles" parent="." instance=ExtResource( 2 )]
+position = Vector2( -24, -23 )
+cell_size = Vector2( 16, 16 )
+cell_tile_origin = 1
+tile_data = PoolIntArray( 65535, 2, 7, 0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 65539, 131071, 2, 5, 65536, 2, 65543, 65537, 2, 65543, 65538, 2, 65543, 65539, 2, 65538, 196607, 2, 65541, 131072, 2, 65540, 131073, 2, 65540, 131074, 2, 65540, 131075, 2, 65542 )
+
+[node name="TopCollison" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -18 )
+shape = SubResource( 1 )
+
+[node name="BottomCollison" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 18 )
+shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 0, 9 )
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -32, -22, 32, -22, 32, 4, -32, 4 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
