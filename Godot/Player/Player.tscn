@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Player/Player_walk.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Sprites/Player/Player_Carry.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/Player/Player_Fish.png" type="Texture" id=7]
 [ext_resource path="res://Player/ItemBar.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Player/Bobber.tscn" type="PackedScene" id=9]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 5.0
@@ -133,6 +134,126 @@ tracks/1/keys = {
 } ]
 }
 
+[sub_resource type="Animation" id=36]
+resource_name = "FishDown"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("FishSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4 ]
+}
+
+[sub_resource type="Animation" id=37]
+resource_name = "FishLeft"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("FishSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 15, 16, 17, 18, 19 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("Bobber")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ "left" ],
+"method": "run_tween"
+} ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.2 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "ShowBobber"
+} ]
+}
+
+[sub_resource type="Animation" id=38]
+resource_name = "FishRight"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("FishSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 10, 11, 12, 13, 14 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "ShowBobber"
+} ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("Bobber")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.2 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ "right" ],
+"method": "run_tween"
+} ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_name = "FishUp"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("FishSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 6, 7, 8, 9 ]
+}
+
 [sub_resource type="Animation" id=4]
 resource_name = "IdleDown"
 length = 1.6
@@ -239,6 +360,18 @@ tracks/2/keys = {
 "update": 0,
 "values": [ 1 ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("FishSprite:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
 
 [sub_resource type="Animation" id=8]
 resource_name = "WalkDown"
@@ -333,6 +466,31 @@ min_space = Vector2( -1.1, -1 )
 max_space = Vector2( 1.1, 1 )
 blend_mode = 1
 
+[sub_resource type="AnimationNodeAnimation" id=40]
+animation = "FishLeft"
+
+[sub_resource type="AnimationNodeAnimation" id=41]
+animation = "FishDown"
+
+[sub_resource type="AnimationNodeAnimation" id=42]
+animation = "FishRight"
+
+[sub_resource type="AnimationNodeAnimation" id=43]
+animation = "FishUp"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=44]
+blend_point_0/node = SubResource( 40 )
+blend_point_0/pos = Vector2( -1.1, 0 )
+blend_point_1/node = SubResource( 41 )
+blend_point_1/pos = Vector2( 0, 1 )
+blend_point_2/node = SubResource( 42 )
+blend_point_2/pos = Vector2( 1.1, 0 )
+blend_point_3/node = SubResource( 43 )
+blend_point_3/pos = Vector2( 0, -1 )
+min_space = Vector2( -1.1, -1 )
+max_space = Vector2( 1.1, 1 )
+blend_mode = 1
+
 [sub_resource type="AnimationNodeAnimation" id=11]
 animation = "IdleLeft"
 
@@ -389,16 +547,22 @@ blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=35]
 
+[sub_resource type="AnimationNodeStateMachineTransition" id=45]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=46]
+
 [sub_resource type="AnimationNodeStateMachine" id=23]
 states/Attack/node = SubResource( 33 )
 states/Attack/position = Vector2( 796, 341 )
+states/Fish/node = SubResource( 44 )
+states/Fish/position = Vector2( 574, 183 )
 states/Idle/node = SubResource( 15 )
 states/Idle/position = Vector2( 796, 183 )
 states/Run/node = SubResource( 20 )
 states/Run/position = Vector2( 1109, 183 )
-transitions = [ "Idle", "Run", SubResource( 21 ), "Run", "Idle", SubResource( 22 ), "Idle", "Attack", SubResource( 34 ), "Attack", "Idle", SubResource( 35 ) ]
+transitions = [ "Idle", "Run", SubResource( 21 ), "Run", "Idle", SubResource( 22 ), "Idle", "Attack", SubResource( 34 ), "Attack", "Idle", SubResource( 35 ), "Fish", "Idle", SubResource( 45 ), "Idle", "Fish", SubResource( 46 ) ]
 start_node = "Idle"
-graph_offset = Vector2( 245, 125 )
+graph_offset = Vector2( 181, 7 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=24]
 
@@ -409,6 +573,10 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Bobber" parent="." instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 0, -17 )
 
 [node name="AttackSprite" type="Sprite" parent="."]
 visible = false
@@ -426,13 +594,12 @@ texture = ExtResource( 5 )
 offset = Vector2( 0, -8 )
 hframes = 5
 vframes = 4
-frame = 1
 
 [node name="FishSprite" type="Sprite" parent="."]
 visible = false
 position = Vector2( 0, -4 )
 texture = ExtResource( 7 )
-offset = Vector2( 0, -8 )
+offset = Vector2( 0, -4 )
 hframes = 5
 vframes = 4
 frame = 1
@@ -453,7 +620,6 @@ texture = ExtResource( 6 )
 offset = Vector2( 0, -8 )
 hframes = 8
 vframes = 4
-frame = 18
 
 [node name="IdleSprite" type="Sprite" parent="."]
 position = Vector2( 0, -4 )
@@ -471,6 +637,10 @@ anims/AttackDown = SubResource( 25 )
 anims/AttackLeft = SubResource( 26 )
 anims/AttackRight = SubResource( 27 )
 anims/AttackUp = SubResource( 28 )
+anims/FishDown = SubResource( 36 )
+anims/FishLeft = SubResource( 37 )
+anims/FishRight = SubResource( 38 )
+anims/FishUp = SubResource( 39 )
 anims/IdleDown = SubResource( 4 )
 anims/IdleLeft = SubResource( 5 )
 anims/IdleRight = SubResource( 6 )
@@ -485,12 +655,12 @@ anims/WalkUp = SubResource( 10 )
 tree_root = SubResource( 23 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/playback = SubResource( 24 )
-parameters/Attack/blend_position = Vector2( 0.331591, -0.0197803 )
+parameters/Attack/blend_position = Vector2( 0, 0 )
+parameters/Fish/blend_position = Vector2( 0, 0 )
 parameters/Idle/blend_position = Vector2( 0, 0 )
 parameters/Run/blend_position = Vector2( 0, 0 )
 
 [node name="UI" type="Node2D" parent="."]
-visible = false
 z_index = 1
 
 [node name="ItemBar" parent="UI" instance=ExtResource( 8 )]

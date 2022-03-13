@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/WorldTiles.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://World/BridgeH.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/FishHouse.tscn" type="PackedScene" id=7]
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Rooms/Door.tscn" type="PackedScene" id=9]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 4 )
@@ -44,6 +45,9 @@ position = Vector2( 656, 312 )
 
 [node name="House" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 712, 280 )
+
+[node name="Door" parent="YSort/House" instance=ExtResource( 9 )]
+position = Vector2( 0, -8 )
 
 [node name="Bush" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 640, 264 )
