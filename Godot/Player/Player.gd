@@ -28,6 +28,7 @@ func _ready():
 	animationTree.active = true
 
 func _process(delta):
+	
 	match state:
 		MOVE:
 			moveState(delta)
@@ -73,8 +74,9 @@ func fishingState():
 func attackAnimationFinish():
 	state = MOVE
 
-func ShowBobber():
+func ShowBobber(dir):
 	bobberObj.show()
+	bobberObj.run_tween(dir)
 
 func setActiveSprite(sprite):
 	attackSprite.hide()

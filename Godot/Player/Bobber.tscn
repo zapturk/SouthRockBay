@@ -134,7 +134,6 @@ frame = 1
 [node name="Area2D" type="Area2D" parent="Path2DLeft/PathFollow2D/Bobber"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2DLeft/PathFollow2D/Bobber/Area2D"]
-scale = Vector2( 1, 1 )
 shape = SubResource( 7 )
 
 [connection signal="tween_completed" from="Path2DRight/PathFollow2D/Bobber/Tween" to="." method="_on_Tween_tween_completed"]
