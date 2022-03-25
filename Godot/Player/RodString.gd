@@ -12,6 +12,10 @@ onready var line2D: = $Line2D
 onready var bobberPos = Vector2.ZERO
 onready var leftAnim = get_parent().get_node("Path2DLeft")
 onready var rightAnim = get_parent().get_node("Path2DRight")
+onready var downAnim = get_parent().get_node("Path2DDown")
+onready var upAnim = get_parent().get_node("Path2DUp")
+
+onready var animNode = downAnim
 
 var pos: PoolVector2Array
 var posPrev: PoolVector2Array
@@ -21,7 +25,7 @@ func _ready()->void:
 	pointCount = get_pointCount(ropeLength)
 	resize_arrays()
 	init_position()
-	set_start(leftAnim.get_node("Position2D1").position)
+	set_start(animNode.get_node("Position2D1").position)
 
 func get_pointCount(distance: float)->int:
 	return int(ceil(distance / constrain))
@@ -40,7 +44,11 @@ func _process(delta)->void:
 	update_points(delta)
 	update_constrain()
 	
-	bobberPos = get_parent().get_node("Path2DLeft/PathFollow2D").position
+	bobberPos = animNode.get_node("PathFollow2D").position
+	
+	if animNode == rightAnim:
+		bobberPos.x = -bobberPos.x
+	
 	set_last(bobberPos)
 	
 	# Send positions to Line2D for drawing
@@ -49,22 +57,33 @@ func _process(delta)->void:
 func setDir(dir):
 	match dir:
 		"up":
+			animNode = upAnim
 			pass
 		"right":
+			animNode = rightAnim
 			pass
 		"down":
+			animNode = downAnim
 			pass
 		"left":
+			animNode = leftAnim
 			pass
 	
 func setStartWithNode(animPos:int):
+	var rodPos = null
+	
 	match animPos:
 		1:
-			set_start(leftAnim.get_node("Position2D1").position)
+			rodPos = animNode.get_node("Position2D1").position
 		2:
-			set_start(leftAnim.get_node("Position2D2").position)
+			rodPos = animNode.get_node("Position2D2").position
 		3:
-			set_start(leftAnim.get_node("Position2D3").position)
+			rodPos = animNode.get_node("Position2D3").position
+		
+	if animNode == rightAnim:
+		rodPos.x = -rodPos.x
+		
+	set_start(rodPos)
 
 func set_start(p:Vector2)->void:
 	pos[0] = p

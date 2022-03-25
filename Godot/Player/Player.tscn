@@ -36,42 +36,6 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=57]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath("../../Path2DLeft/PathFollow2D/Bobber:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 1 ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Bobber/Path2DLeft/PathFollow2D/Bobber:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 1 ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("Bobber:frame")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 1 ]
-}
 
 [sub_resource type="CircleShape2D" id=54]
 radius = 3.16228
@@ -95,34 +59,10 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=53]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath("Bobber:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 1 ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Bobber/Path2DLeft/PathFollow2D/Bobber:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 1 ]
-}
 
 [sub_resource type="Curve2D" id=58]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 0, -21, 0, 0, 0, 0, 0, 24 )
+"points": PoolVector2Array( 0, 0, 0, 0, 0, -21, 0, 0, 0, 0, 0, 26 )
 }
 
 [sub_resource type="Animation" id=59]
@@ -144,42 +84,6 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=60]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath("../../Path2DLeft/PathFollow2D/Bobber:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 1 ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Bobber/Path2DLeft/PathFollow2D/Bobber:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 1 ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("Bobber:frame")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 1 ]
-}
 
 [sub_resource type="Curve2D" id=61]
 _data = {
@@ -339,6 +243,29 @@ tracks/1/keys = {
 "method": "ShowBobber"
 } ]
 }
+tracks/2/type = "method"
+tracks/2/path = NodePath("Bobber/RodString")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"values": [ {
+"args": [ "down" ],
+"method": "setDir"
+}, {
+"args": [ 1 ],
+"method": "setStartWithNode"
+}, {
+"args": [ 2 ],
+"method": "setStartWithNode"
+}, {
+"args": [ 3 ],
+"method": "setStartWithNode"
+} ]
+}
 
 [sub_resource type="Animation" id=37]
 resource_name = "FishLeft"
@@ -376,9 +303,12 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "values": [ {
+"args": [ "left" ],
+"method": "setDir"
+}, {
 "args": [ 1 ],
 "method": "setStartWithNode"
 }, {
@@ -417,6 +347,29 @@ tracks/1/keys = {
 "values": [ {
 "args": [ "right" ],
 "method": "ShowBobber"
+} ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("Bobber/RodString")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"values": [ {
+"args": [ "right" ],
+"method": "setDir"
+}, {
+"args": [ 1 ],
+"method": "setStartWithNode"
+}, {
+"args": [ 2 ],
+"method": "setStartWithNode"
+}, {
+"args": [ 3 ],
+"method": "setStartWithNode"
 } ]
 }
 
@@ -511,7 +464,7 @@ tracks/0/path = NodePath("WalkSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -523,7 +476,7 @@ tracks/1/path = NodePath("AttackSprite:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
-tracks/1/enabled = true
+tracks/1/enabled = false
 tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -535,7 +488,7 @@ tracks/2/path = NodePath("IdleSprite:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
-tracks/2/enabled = true
+tracks/2/enabled = false
 tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -547,7 +500,7 @@ tracks/3/path = NodePath("FishSprite:frame")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
-tracks/3/enabled = true
+tracks/3/enabled = false
 tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -757,13 +710,12 @@ __meta__ = {
 }
 
 [node name="FishSprite" type="Sprite" parent="."]
-visible = false
 position = Vector2( 0, -4 )
 texture = ExtResource( 7 )
 offset = Vector2( 0, -4 )
 hframes = 5
 vframes = 4
-frame = 1
+frame = 14
 
 [node name="AttackSprite" type="Sprite" parent="."]
 visible = false
@@ -772,7 +724,7 @@ texture = ExtResource( 3 )
 offset = Vector2( 0, -8 )
 hframes = 4
 vframes = 4
-frame = 1
+frame = 5
 
 [node name="AxeSprite" type="Sprite" parent="."]
 visible = false
@@ -800,6 +752,7 @@ hframes = 8
 vframes = 4
 
 [node name="IdleSprite" type="Sprite" parent="."]
+visible = false
 position = Vector2( 0, -4 )
 texture = ExtResource( 4 )
 offset = Vector2( 0, -8 )
@@ -808,6 +761,7 @@ vframes = 4
 frame = 1
 
 [node name="Bobber" type="Node2D" parent="."]
+visible = false
 script = ExtResource( 10 )
 
 [node name="RodString" type="Node2D" parent="Bobber"]
@@ -816,7 +770,7 @@ ropeLength = 10.0
 gravity = Vector2( 0, 4.9 )
 
 [node name="Line2D" type="Line2D" parent="Bobber/RodString"]
-width = 0.2
+width = 0.3
 default_color = Color( 1, 1, 1, 1 )
 
 [node name="Path2DRight" type="Path2D" parent="Bobber"]
@@ -846,7 +800,6 @@ rotation = 1.25664
 scale = Vector2( 1, -1 )
 texture = ExtResource( 9 )
 hframes = 4
-frame = 1
 
 [node name="Tween" type="Tween" parent="Bobber/Path2DRight/PathFollow2D/Bobber"]
 
@@ -892,6 +845,15 @@ shape = SubResource( 54 )
 [node name="Path2DDown" type="Path2D" parent="Bobber"]
 curve = SubResource( 58 )
 
+[node name="Position2D1" type="Position2D" parent="Bobber/Path2DDown"]
+position = Vector2( 0, -21 )
+
+[node name="Position2D2" type="Position2D" parent="Bobber/Path2DDown"]
+position = Vector2( -1, -10 )
+
+[node name="Position2D3" type="Position2D" parent="Bobber/Path2DDown"]
+position = Vector2( -1, 7 )
+
 [node name="PathFollow2D" type="PathFollow2D" parent="Bobber/Path2DDown"]
 position = Vector2( 0, -21 )
 rotation = 1.5708
@@ -916,6 +878,17 @@ shape = SubResource( 54 )
 
 [node name="Path2DUp" type="Path2D" parent="Bobber"]
 curve = SubResource( 61 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Bobber/Path2DUp"]
+
+[node name="Position2D1" type="Position2D" parent="Bobber/Path2DUp"]
+position = Vector2( 0, -20 )
+
+[node name="Position2D2" type="Position2D" parent="Bobber/Path2DUp"]
+position = Vector2( 1, 5 )
+
+[node name="Position2D3" type="Position2D" parent="Bobber/Path2DUp"]
+position = Vector2( 1, -8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
