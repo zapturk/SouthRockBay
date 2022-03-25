@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=2]
+[gd_scene load_steps=70 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Player/Player_walk.png" type="Texture" id=2]
@@ -87,7 +87,39 @@ length = 0.001
 
 [sub_resource type="Curve2D" id=61]
 _data = {
-"points": PoolVector2Array(  )
+"points": PoolVector2Array( 0, 0, 0, 0, 0, -16, 0, 0, 0, 0, 0, -46 )
+}
+
+[sub_resource type="Animation" id=62]
+resource_name = "BobberInWater"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Bobber:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=63]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Bobber:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
 }
 
 [sub_resource type="CapsuleShape2D" id=1]
@@ -387,6 +419,43 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 5, 6, 7, 8, 9 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ "up" ],
+"method": "ShowBobber"
+} ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("Bobber/RodString")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"values": [ {
+"args": [ "up" ],
+"method": "setDir"
+}, {
+"args": [ 1 ],
+"method": "setStartWithNode"
+}, {
+"args": [ 2 ],
+"method": "setStartWithNode"
+}, {
+"args": [ 3 ],
+"method": "setStartWithNode"
+} ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -709,57 +778,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="FishSprite" type="Sprite" parent="."]
-position = Vector2( 0, -4 )
-texture = ExtResource( 7 )
-offset = Vector2( 0, -4 )
-hframes = 5
-vframes = 4
-frame = 14
-
-[node name="AttackSprite" type="Sprite" parent="."]
-visible = false
-position = Vector2( 0, -4 )
-texture = ExtResource( 3 )
-offset = Vector2( 0, -8 )
-hframes = 4
-vframes = 4
-frame = 5
-
-[node name="AxeSprite" type="Sprite" parent="."]
-visible = false
-position = Vector2( 0, -4 )
-texture = ExtResource( 5 )
-offset = Vector2( 0, -8 )
-hframes = 5
-vframes = 4
-
-[node name="WalkSprite" type="Sprite" parent="."]
-visible = false
-position = Vector2( 0, -4 )
-texture = ExtResource( 2 )
-offset = Vector2( 0, -8 )
-hframes = 8
-vframes = 4
-frame = 18
-
-[node name="CarrySprite" type="Sprite" parent="."]
-visible = false
-position = Vector2( 0, -4 )
-texture = ExtResource( 6 )
-offset = Vector2( 0, -8 )
-hframes = 8
-vframes = 4
-
-[node name="IdleSprite" type="Sprite" parent="."]
-visible = false
-position = Vector2( 0, -4 )
-texture = ExtResource( 4 )
-offset = Vector2( 0, -8 )
-hframes = 8
-vframes = 4
-frame = 1
-
 [node name="Bobber" type="Node2D" parent="."]
 visible = false
 script = ExtResource( 10 )
@@ -846,6 +864,7 @@ shape = SubResource( 54 )
 curve = SubResource( 58 )
 
 [node name="Position2D1" type="Position2D" parent="Bobber/Path2DDown"]
+visible = false
 position = Vector2( 0, -21 )
 
 [node name="Position2D2" type="Position2D" parent="Bobber/Path2DDown"]
@@ -867,7 +886,6 @@ rotation = 1.5708
 scale = Vector2( 1, -1 )
 texture = ExtResource( 9 )
 hframes = 4
-frame = 1
 
 [node name="Tween" type="Tween" parent="Bobber/Path2DDown/PathFollow2D/Bobber"]
 
@@ -880,6 +898,27 @@ shape = SubResource( 54 )
 curve = SubResource( 61 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Bobber/Path2DUp"]
+position = Vector2( 0, -46 )
+rotation = -1.5708
+offset = 30.0044
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Bobber/Path2DUp/PathFollow2D"]
+anims/BobberInWater = SubResource( 62 )
+anims/RESET = SubResource( 63 )
+
+[node name="Bobber" type="Sprite" parent="Bobber/Path2DUp/PathFollow2D"]
+rotation = -1.5708
+scale = Vector2( 1, -1 )
+texture = ExtResource( 9 )
+hframes = 4
+frame = 1
+
+[node name="Tween" type="Tween" parent="Bobber/Path2DUp/PathFollow2D/Bobber"]
+
+[node name="Area2D" type="Area2D" parent="Bobber/Path2DUp/PathFollow2D/Bobber"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bobber/Path2DUp/PathFollow2D/Bobber/Area2D"]
+shape = SubResource( 54 )
 
 [node name="Position2D1" type="Position2D" parent="Bobber/Path2DUp"]
 position = Vector2( 0, -20 )
@@ -889,6 +928,57 @@ position = Vector2( 1, 5 )
 
 [node name="Position2D3" type="Position2D" parent="Bobber/Path2DUp"]
 position = Vector2( 1, -8 )
+
+[node name="FishSprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -4 )
+texture = ExtResource( 7 )
+offset = Vector2( 0, -4 )
+hframes = 5
+vframes = 4
+frame = 9
+
+[node name="AttackSprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -4 )
+texture = ExtResource( 3 )
+offset = Vector2( 0, -8 )
+hframes = 4
+vframes = 4
+frame = 3
+
+[node name="AxeSprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -4 )
+texture = ExtResource( 5 )
+offset = Vector2( 0, -8 )
+hframes = 5
+vframes = 4
+
+[node name="WalkSprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -4 )
+texture = ExtResource( 2 )
+offset = Vector2( 0, -8 )
+hframes = 8
+vframes = 4
+frame = 18
+
+[node name="CarrySprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -4 )
+texture = ExtResource( 6 )
+offset = Vector2( 0, -8 )
+hframes = 8
+vframes = 4
+
+[node name="IdleSprite" type="Sprite" parent="."]
+position = Vector2( 0, -4 )
+texture = ExtResource( 4 )
+offset = Vector2( 0, -8 )
+hframes = 8
+vframes = 4
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
@@ -938,3 +1028,4 @@ current = true
 [connection signal="tween_completed" from="Bobber/Path2DRight/PathFollow2D/Bobber/Tween" to="Bobber" method="_on_Tween_tween_completed"]
 [connection signal="tween_completed" from="Bobber/Path2DLeft/PathFollow2D/Bobber/Tween" to="Bobber" method="_on_Tween_tween_completed"]
 [connection signal="tween_completed" from="Bobber/Path2DDown/PathFollow2D/Bobber/Tween" to="Bobber" method="_on_Tween_tween_completed"]
+[connection signal="tween_completed" from="Bobber/Path2DUp/PathFollow2D/Bobber/Tween" to="Bobber" method="_on_Tween_tween_completed"]

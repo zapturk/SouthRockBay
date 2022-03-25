@@ -12,6 +12,7 @@ func run_tween(dir):
 	$Path2DRight.hide()
 	$Path2DLeft.hide()
 	$Path2DDown.hide()
+	$Path2DUp.hide()
 	
 	match direction:
 		"right":
@@ -35,11 +36,19 @@ func run_tween(dir):
 				0.0, 1.0, 0.3)
 			$Path2DDown/PathFollow2D/Bobber/Tween.start()
 			$Path2DDown/PathFollow2D/AnimationPlayer.play("BobberInWater")
+		"up":
+			$Path2DUp.show()
+			$Path2DUp/PathFollow2D/Bobber/Tween.interpolate_property(
+				$Path2DUp/PathFollow2D, "unit_offset",
+				0.0, 1.0, 0.3)
+			$Path2DUp/PathFollow2D/Bobber/Tween.start()
+			$Path2DUp/PathFollow2D/AnimationPlayer.play("BobberInWater")
 
 func resetObj():
 	$Path2DRight/PathFollow2D.offset = 0
 	$Path2DLeft/PathFollow2D.offset = 0
 	$Path2DDown/PathFollow2D.offset = 0
+	$Path2DUp/PathFollow2D.offset = 0
 
 func _on_Tween_tween_completed(object, key):
 	var body = null
@@ -50,6 +59,8 @@ func _on_Tween_tween_completed(object, key):
 			body = $Path2DRight/PathFollow2D/Bobber/Area2D.get_overlapping_bodies()
 		"left":
 			body = $Path2DLeft/PathFollow2D/Bobber/Area2D.get_overlapping_bodies()
+		"up":
+			body = $Path2DUp/PathFollow2D/Bobber/Area2D.get_overlapping_bodies()
 			
 	if body.size() > 0:
 		if body[0] == water:
