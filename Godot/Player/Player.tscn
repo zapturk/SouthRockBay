@@ -936,7 +936,7 @@ texture = ExtResource( 7 )
 offset = Vector2( 0, -4 )
 hframes = 5
 vframes = 4
-frame = 9
+frame = 5
 
 [node name="AttackSprite" type="Sprite" parent="."]
 visible = false
@@ -945,7 +945,6 @@ texture = ExtResource( 3 )
 offset = Vector2( 0, -8 )
 hframes = 4
 vframes = 4
-frame = 3
 
 [node name="AxeSprite" type="Sprite" parent="."]
 visible = false
