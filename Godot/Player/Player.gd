@@ -28,7 +28,6 @@ func _ready():
 	animationTree.active = true
 
 func _process(delta):
-	
 	match state:
 		MOVE:
 			moveState(delta)
